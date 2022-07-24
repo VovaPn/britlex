@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+.about-us{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &__heading{
+        display: flex;
+        justify-content: center;
+    }
+    &__text{
+        text-align: center;
+    }
+}
+
+.benefits{
+    margin-bottom: 84px;
+
+    &__heading{
+        font-size:$second-heading-font-size-mobile;
+        text-align: center;
+        line-height: $second-heading-line-height-mobile;
+    }
+
+    &__text{
+        text-align: center;
+    }
+}
+
+}

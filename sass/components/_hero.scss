@@ -1,0 +1,48 @@
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.hero__br--mobile{
+    display: none;
+}
+
+.hero__button {
+    background-color: $accent;
+    color: $background-color;
+    border-radius:$border-radius;
+}
+
+@media screen and (max-width: 767px) {
+
+.hero{
+    margin-bottom: 53px;
+}    
+
+.hero__image{
+    margin-bottom: 16px;
+}    
+
+.hero__heading{ 
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: $hero-heading-line-height-desktop;
+}
+.hero__br--mobile{
+    display: block;
+}
+
+.hero__text{
+    margin-bottom: 33px;
+    text-align: center;
+    font-size: 14px;
+    line-height: $text-line-height;
+}
+.hero__button{
+    display: flex;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    justify-content: center;
+}      
+}

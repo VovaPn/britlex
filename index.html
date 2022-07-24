@@ -4,150 +4,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brietlex</title>
+    <title>Brietlex</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    
 </head>
 <body>
     <!-- header -->
-    <header>
-    <nav>
+    <header class="section">
+    <div class="container">
+    <nav class="nav">
         <!-- logo -->
-        <a href="./index.html">Brit<span>lex</span></a>
+        <a class="logo" href="./index.html">Brit<span class="logo--second-color">lex</span></a>
            
-        <ul>
+        <ul class="nav__links">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="">Skills</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Contacts</a></li>
-            </ul>
+                <li><button type="button">Let's talk</button></li>
+        </ul>
+        <button class="header__menu-button">
+            <img src="./image/burger-menu.svg" alt="menu">
+    </button>    
         
     </nav>
-    <button type="button">Let's talk</button>
+    </div>    
    </header>
   <!-- main -->
    <main>
     <!-- hero -->
 <section>
-    <h1>Learn Any Foreign Language</h1>
-    <p>With our teachers who write a program for
-    each student, you will be able to make your
-    first sketch after the first lesson.</p>
-    <a href="">Get started</a>
-    <img src="./image/learning-languages.png" alt="girl learning languages">
-
+   <div class="container hero">
+    <div>
+        <h1 class="hero__heading">Learn Any <br class="hero__br--mobile">Foreign Language</h1>
+        <p class="hero__text">With our teachers who write a program for
+            each student, you will be able to make your
+            first sketch after the first lesson.</p>
+        <a class="hero__button" href="">Get started</a>
+    </div>
+    <picture class="hero__image">
+        <source srcset="./image/Learning_languages320.png 1x, ./image/Learning_languages320@2x.png 2x"
+            media="(max-width:767px)">
+        <source srcset="./image/Learning_languages768.png 1x, ./image/Learning_languages768@2x.png 2x"
+            media="(min-width:768px) and (max-width:1337px)">
+        <source srcset="./image/Learning_languages1338.png 1x, ./image/Learning_languages1338@2x.png 2x"
+            media="(min-width:1338px)">
+        <img src="./image/Learning_languages320.png" alt="girl learning languages">
+    </picture>
+   </div>     
 </section>
-<!-- hero -->
+
+<!-- Skills-->
 <section>
-<h2>Skills</h2>
-<ul>
-    <li>
-    <img src="./image/speaking.png" alt="guys speaking">
-    <h3>Speaking</h3>
-    <p>Improve your English skills and confidence.
+    <div class="container">
+    <h2 class="skills__main-heading">Skills</h2>
+    <ul class="skills__list">
+    <li class="skills__item">
+    <picture class="skills__image">
+    <source srcset="./image/Shared_goals320.png 1x, ./image/Shared_goals320@2x.png 2x" media="(max-width:767px)">
+    <source srcset="./image/Shared_goals768.png 1x, ./image/Shared_goals768@2x.png 2x" media="(min-width:768px) and (max-width:1337px)">
+    <source srcset="./image/Shared_goals1338.png 1x, ./image/Shared_goals1338@2x.png 2x" media="(min-width:1338px)">
+    <img src="./image/Shared_goals320.png" alt="guys speaking">    
+    </picture>
+    
+    <h3 class="skills__secondary-heading">Speaking</h3>
+    <p class="skills__text">Improve your English skills and confidence.
     Live classes and interactive lessons online.
-    20% extra free for a limited time only
+    20% extra free for a limited time only <br><br>
     
     Learn English online and improve your
     skills through our high-quality courses
     and resources – all designed for adult language learners.</p>
-    <a href="">Learn more</a>
+    <a class="skills__buttons" href="">Learn more</a>
     </li>
-    <li>
-        <img src="./image/writing.png" alt="writing">
-        <h3>Writing</h3>
-        <p>One of the most important and extensive
+    <li class="skills__item">
+        <picture class="skills__image">
+            <source srcset="./image/Typewriter320.png 1x, ./image/Typewriter320@2x.png 2x" media="(max-width:767px)">
+            <source srcset="./image/Typewriter768.png 1x, ./image/Typewriter768@2x.png 2x" media="(min-width:768px) and (max-width:1337px)">
+            <source srcset="./image/Typewriter1338.png 1x, ./image/Typewriter1338@2x.png 2x" media="(min-width:1338px)">
+        <img src="./image/Typewriter320.png" alt="writing">
+        </picture>
+        
+        <h3 class="skills__secondary-heading">Writing</h3>
+        <p class="skills__text">One of the most important and extensive
         areas of natural science, the science that
         studies substances, also their composition</p>
-        <a href="">Learn more</a>
+        <a class="skills__buttons" href="">Learn more</a>
     </li>
-    <li>
-        <img src="./image/reading.png" alt="man reading">
-        <h3>Reading</h3>
-        <p>Perception and response actions of the user
+    <li class="skills__item">
+        <picture class="skills__image">
+            <source srcset="./image/House_bookshelves320.png 1x, ./image/House_bookshelves320@2x.png 2x" media="(max-width:767px)">
+            <source srcset="./image/House_bookshelves768.png 1x, ./image/House_bookshelves768@2x.png 2x"
+                media="(min-width:768px) and (max-width:1337px)">
+            <source srcset="./image/House_bookshelves1338.png 1x, ./image/House_bookshelves1338@2x.png 2x" media="(min-width:1338px)">
+            <img src="./image/House_bookshelves320.png" alt="man reading">
+        </picture>
+        
+        <h3 class="skills__secondary-heading">Reading</h3>
+        <p class="skills__text">Perception and response actions of the user
         resulting from the use and/or upcoming use
         of the product, system or service</p>
-        <a href="">Learn more</a>
+        <a class="skills__buttons" href="">Learn more</a>
     </li>
-    <li>
-        <h3>Listening</h3>
-        <p>Here you can find activities to practise
+    <li class="skills__item">
+        <picture class="skills__image">
+            <source srcset="./image/Podcast320.png 1x, ./image/Podcast320@2x.png 2x" media="(max-width:767px)">
+            <source srcset="./image/Podcast768.png 1x, ./image/Podcast768@2x.png 2x"
+                media="(min-width:768px) and (max-width:1337px)">
+            <source srcset="./image/Podcast1338.png 1x, ./image/Podcast1338@2x.png 2x" media="(min-width:1338px)">
+            <img src="./image/Podcast320.png" alt="people listenning music">
+        </picture>
+        <h3 class="skills__secondary-heading">Listening</h3>
+        <p class="skills__text">Here you can find activities to practise
         your listening skills. Listening will help you to improve your understanding</p>
-        <a href="">Learn more</a>
-        <img src="./image/listening.png" alt="people listenning music">
+        <a class="skills__buttons" href="">Learn more</a>                
     </li>
 </ul>
+</div>
+
 </section>
 <!-- about us -->
-<section>
-    <h2>About Us</h2>
-    <p>The model offers a framework for discussing problems related to the user's experience, as well as possible ways and
+<section class="container">
+    <h2 class="about-us__heading">About Us</h2>
+    <div class="about-us">    
+    <div>
+    <p class="about-us__text">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and
     means of solving them. Application development begins at the top level (strategy), where the future software product is
     described quite abstractly from the point of view of the expectations of both users and the customer.</p>
-    <ul>
+    <ul class="benefits">
         <li>
-            <h3>800</h3>
-            <p>Pupils</p>
+            <h3 class="benefits__heading">800</h3>
+            <p class="benefits__text">Pupils</p>
         </li>
         <li>
-            <h3>18</h3>
-            <p>Teachers</p>
+            <h3 class="benefits__heading">18</h3>
+            <p class="benefits__text">Teachers</p>
         </li>
         <li>
-            <h3>6</h3>
-            <p>Foreign
-            languages</p>
-        </li>
-        <img src="./image/Business-competition.png" alt="guy in the top of the hill">
+            <h3 class="benefits__heading">6</h3>
+            <p class="benefits__text">Foreign languages</p>
+        </li>        
     </ul>
+    </div>    
+    <picture>
+        <source srcset="./image/Business_competition320.png 1x, ./image/Business_competition320@2x.png 2x"
+            media="(max-width:767px)">
+        <source srcset="./image/Business_competition768.png 1x, ./image/Business_competition768@2x.png 2x"
+            media="(min-width:768px) and (max-width:1337px)">
+        <source srcset="./image/Business_competition1338.png 1x, ./image/Business_competition1338@2x.png 2x"
+            media="(min-width:1338px)">
+        <img src="./image/Business_competition320.png" alt="guy in the top of the hill">
+    </picture>
+</div>
 </section>
 <!-- pricing -->
 <section>
-    <h2>Pricing</h2>
-    <ul>
+    <div class="container pricing">
+    <h2 class="pricing__heading">Pricing</h2>
+    <ul class="cards">
         <li>
-        <img src="./image/Self-study.png" alt="girl studying">
-        <h3>Self-study online course</h3>
-        <p>Start learning English online in live classes
+            <picture class="cards__image">
+                <source srcset="./image/Online_test320.png 1x, ./image/Online_test320@2x.png 2x"
+                    media="(max-width:767px)">
+                <source srcset="./image/Online_test768.png 1x, ./image/Online_test768@2x.png 2x"
+                    media="(min-width:768px) and (max-width:1337px)">
+                <source srcset="./image/Online_test1338.png 1x, ./image/Online_test1338@2x.png 2x" media="(min-width:1338px)">
+                <img src="./image/Online_test320.png" alt="girl studying">
+            </picture>        
+        <h3 class="cards__heading">Self-study online course</h3>
+        <p class="cards__text">Start learning English online in live classes
         with qualified EC teachers and students
         from all over the world.</p>  
-        <p>£5.99</p>
-        <p>per month</p>  
+        <p class="cards__price">£5.99 <span class="cards__limit">per month</span></p>      
         </li>
         <li>
-            <img src="./image/Live-online-classes.png" alt="live classes">
-            <h3>Live online classes</h3>
-            <p>Interactive group classes with expert
+            <picture class="cards__image">
+                <source srcset="./image/Lesson320.png 1x, ./image/Lesson320@2x.png 2x"
+                    media="(max-width:767px)">
+                <source srcset="./image/Lesson768.png 1x, ./image/Lesson768@2x.png 2x"
+                    media="(min-width:768px) and (max-width:1337px)">
+                <source srcset="./image/Lesson1338.png 1x, ./image/Lesson1338@2x.png 2x" media="(min-width:1338px)">
+                <img src="./image/Lesson320.png" alt="live classes">
+            </picture>            
+            <h3 class="cards__heading">Live online classes</h3>
+            <p class="cards__text">Interactive group classes with expert
             teachers. Free 7-day trial</p>
-            <p>£12.99</p>
-            <p>per month</p>
+            <p class="cards__price">£12.99 <span class="cards__limit">per month</span></p>
+            
         </li>
         <li>
-            <img src="./image/Personal-Tuition.png" alt="woman studying">
-            <h3>Personal Tuition</h3> 
-            <p>Online one-to-one English tutoring – enjoy
+            <picture class="cards__image">
+                <source srcset="./image/Webinar320.png 1x, ./image/Webinar320@2x.png 2x"
+                    media="(max-width:767px)">
+                <source srcset="./image/Webinar768.png 1x, ./image/Webinar768@2x.png 2x"
+                    media="(min-width:768px) and (max-width:1337px)">
+                <source srcset="./image/Webinar1338.png 1x, ./image/Webinar1338@2x.png 2x" media="(min-width:1338px)">
+                <img src="./image/Webinar320.png" alt="woman studying">
+            </picture>            
+            <h3 class="cards__heading">Personal Tuition</h3> 
+            <p class="cards__text">Online one-to-one English tutoring – enjoy
             our first session for only $1</p>
-            <p>£12.99</p>
-            <p>per month</p> 
+            <p class="cards__price">£12.99 <span class="cards__limit">per month</span></p>
+            
         </li>
     </ul>
+    </div>
     </section>
     <!-- contuct us -->
-    <section>   
-        <img src="./image/contact-us.png" alt="boy with paper plane">
+    <section>
+        <div class="container">
+        <picture>
+            <source srcset="./image/contact_us320.png 1x, ./image/contact_us320@2x.png 2x"
+                media="(max-width:767px)">
+            <source srcset="./image/contact_us768.png 1x, ./image/contact_us768@2x.png 2x"
+                media="(min-width:768px) and (max-width:1337px)">
+            <source srcset="./image/contact_us1338.png 1x, ./image/contact_us1338@2x.png 2x" media="(min-width:1338px)">
+            <img src="./image/contact_us320.png" alt="boy with paper plane">
+        </picture>       
         <h2>Contact Us</h2>
         <p>Discover your current English level by taking our free online English test. Sign up to our newsletter for learning tips
         and free resources</p>
+    </div>
     </section>
    
 </main>
 <!-- footer -->
    <footer>
-    <a href="./index.html">Brit<span>lex</span></a>
-    <ul>
+    <div class="container">
+    <a class="logo" href="./index.html">Brit<span class="logo--second-color">lex</span></a>
+    <ul class="footer__links">
         <li><a href="">Terms and Conditions</a></li>
         <li><a href="">Privacy Policy</a></li>
         <li><a href="">Cookie Policy</a></li>
     </ul>
+    </div>
    </footer>
 
 </body>

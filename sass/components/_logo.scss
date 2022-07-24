@@ -1,0 +1,36 @@
+.logo{
+    color: $main-heading-color;
+    line-height: 1.5;
+
+    &--second-color{
+        color: $logo-second-color;
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center
+}
+
+.header__menu-button{
+    display: flex;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    width: 34px;
+    height: 20px;
+}
+
+.header__menu-icon{
+    
+    fill: $menu-button-color;
+}
+@media screen and (max-width: 767px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav__links{
+        display: none;
+    }
+}
