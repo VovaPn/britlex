@@ -1,0 +1,132 @@
+.contact-us__input{
+    border-radius: $border-radius;
+    border-color: $text-color;
+}
+
+.contact-us__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    background-color: $accent;
+    color: $background-color;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .contact-us{
+        margin-bottom: 55px;
+
+    &--heading-position{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__image{
+        margin-bottom: 38px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__heading{
+        margin-bottom: 38px;
+        text-align: center;
+    }
+
+    &__text{
+        margin-bottom: 31px;
+        text-align: center;
+    }
+
+    &__input{
+        margin-bottom: 17px;
+        padding-left: 26px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 100%;
+    }
+
+    &__button{       
+        height: 60px;        
+        width: 100%;  
+        font-size: 14px;
+    }
+}
+}
+
+@media screen and (min-width: 768px){
+
+.contact-us{
+    display: flex;
+    margin-bottom: 100px; 
+
+    &__image{
+        width: 100%;
+    }
+
+    &__heading{
+        margin-bottom: 20px;
+    }
+    &__text{
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    
+    &__form {
+         display: flex;
+     }
+    
+    &__input{
+        margin-right: 6px;
+        width: 283px;
+        height: 50px;
+        padding-left: 24px;
+        font-size: 12px;
+    }
+
+    &__button{
+        width: 145px;
+        font-size: 13px;
+    }
+  
+}
+}
+
+@media screen and (min-width: 1338px) {
+
+.contact-us {        
+        margin-bottom: 55px;      
+
+        &__heading {
+            margin-bottom: 60px;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+            font-size: 20px;
+        }       
+
+        &__input {
+            margin-right: 30px;
+            width: 425px;
+            height: 70px;
+            padding-left: 30px;
+            font-size: 16px;
+        }
+
+        &__button {
+            width: 315px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,20 @@
+.cards__price {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    background-color: $second-background;
+    color: $accent;
+    text-align: center;
+}
+
+.cards__limit{
+    color: $price-limit-color;
+    margin-left: 10px;
+}
+
 @media screen and (max-width: 767px) {
 
     .pricing__heading{
@@ -31,18 +48,92 @@
             margin-bottom: 33px;
             text-align: center;
         }
-        &__price{
-            background-color: $second-background;
+        &__price{           
             font-size: 18px;
-            line-height: 1.5;
-            color: $accent;
-            text-align: center;
+            line-height: 1.5;            
         }
-        &__limit{
-            color: $price-limit-color;
+        &__limit{            
             font-size: 14px;
-
         }
 
     }
 }
+
+@media screen and (min-width: 768px){
+
+    .pricing{
+        margin-bottom: 90px;
+    }
+    
+    .pricing__heading{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 31% 33% 32%;
+        gap: 1em;
+        align-items: end;       
+
+        &__heading{
+            margin-top: 23px;
+            margin-bottom: 15px;
+            width: 165px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        
+        &__text--margin{
+            margin-bottom: 73px;
+        }
+
+        &__price {
+            margin-top: 23px;
+           font-size: 22px;           
+                 }
+        &__limit {
+            font-size: 16px;
+                }
+        }      
+    }
+
+        @media screen and (min-width: 1338px) {
+
+    .pricing {
+        margin-bottom: 180px;
+    }
+
+    .pricing__heading {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .cards {
+
+        &__heading {
+            margin-top: 31px;
+            margin-bottom: 20px;
+            width: 385px;
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        &__text--margin {
+            margin-bottom: 48px;
+        }
+
+        &__price {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+
+        &__limit {
+            font-size: 18px;
+        }
+    }
+
+        }
+
+

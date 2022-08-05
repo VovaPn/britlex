@@ -19,12 +19,12 @@
            
         <ul class="nav__links">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><button type="button">Let's talk</button></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about__us">About Us</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contacts">Contacts</a></li>                
         </ul>
+        <button class="nav__button" type="button">Let's talk</button>
         <button class="header__menu-button">
             <img src="./image/burger-menu.svg" alt="menu">
     </button>    
@@ -38,7 +38,7 @@
 <section>
    <div class="container hero">
     <div>
-        <h1 class="hero__heading">Learn Any <br class="hero__br--mobile">Foreign Language</h1>
+        <h1 class="hero__heading">Learn <br class="hero__br"> Any <br class="hero__br-mobile">Foreign Language</h1>
         <p class="hero__text">With our teachers who write a program for
             each student, you will be able to make your
             first sketch after the first lesson.</p>
@@ -57,76 +57,79 @@
 </section>
 
 <!-- Skills-->
-<section>
+<section id="skills">
     <div class="container">
     <h2 class="skills__main-heading">Skills</h2>
     <ul class="skills__list">
-    <li class="skills__item">
-    <picture class="skills__image">
-    <source srcset="./image/Shared_goals320.png 1x, ./image/Shared_goals320@2x.png 2x" media="(max-width:767px)">
-    <source srcset="./image/Shared_goals768.png 1x, ./image/Shared_goals768@2x.png 2x" media="(min-width:768px) and (max-width:1337px)">
-    <source srcset="./image/Shared_goals1338.png 1x, ./image/Shared_goals1338@2x.png 2x" media="(min-width:1338px)">
-    <img src="./image/Shared_goals320.png" alt="guys speaking">    
-    </picture>
+
+    <li class="skills__item speaking">
+    <picture class="skills__image speaking__image">
+        <source srcset="./image/Shared_goals320.png 1x, ./image/Shared_goals320@2x.png 2x" media="(max-width:767px)">
+        <source srcset="./image/Shared_goals768.png 1x, ./image/Shared_goals768@2x.png 2x" media="(min-width:768px) and (max-width:1337px)">
+        <source srcset="./image/Shared_goals1338.png 1x, ./image/Shared_goals1338@2x.png 2x" media="(min-width:1338px)">
+        <img src="./image/Shared_goals320.png" alt="guys speaking">    
+    </picture>    
+        <h3 class="skills__secondary-heading speaking__heading">Speaking</h3>
+        <p class="skills__text">Improve your English skills and confidence.
+            Live classes and interactive lessons online.
+            20% extra free for a limited time only <br><br>
     
-    <h3 class="skills__secondary-heading">Speaking</h3>
-    <p class="skills__text">Improve your English skills and confidence.
-    Live classes and interactive lessons online.
-    20% extra free for a limited time only <br><br>
-    
-    Learn English online and improve your
-    skills through our high-quality courses
-    and resources – all designed for adult language learners.</p>
-    <a class="skills__buttons" href="">Learn more</a>
+        Learn English online and improve your
+        skills through our high-quality courses
+        and resources – all designed for adult language learners.</p>
+        <a class="skills__buttons" href="">Learn more</a>
     </li>
-    <li class="skills__item">
+
+    <li class="skills__item writing">
         <picture class="skills__image">
             <source srcset="./image/Typewriter320.png 1x, ./image/Typewriter320@2x.png 2x" media="(max-width:767px)">
             <source srcset="./image/Typewriter768.png 1x, ./image/Typewriter768@2x.png 2x" media="(min-width:768px) and (max-width:1337px)">
             <source srcset="./image/Typewriter1338.png 1x, ./image/Typewriter1338@2x.png 2x" media="(min-width:1338px)">
         <img src="./image/Typewriter320.png" alt="writing">
-        </picture>
-        
+        </picture>        
         <h3 class="skills__secondary-heading">Writing</h3>
         <p class="skills__text">One of the most important and extensive
         areas of natural science, the science that
         studies substances, also their composition</p>
         <a class="skills__buttons" href="">Learn more</a>
     </li>
-    <li class="skills__item">
+
+    <li class="skills__item reading">
         <picture class="skills__image">
             <source srcset="./image/House_bookshelves320.png 1x, ./image/House_bookshelves320@2x.png 2x" media="(max-width:767px)">
             <source srcset="./image/House_bookshelves768.png 1x, ./image/House_bookshelves768@2x.png 2x"
                 media="(min-width:768px) and (max-width:1337px)">
             <source srcset="./image/House_bookshelves1338.png 1x, ./image/House_bookshelves1338@2x.png 2x" media="(min-width:1338px)">
             <img src="./image/House_bookshelves320.png" alt="man reading">
-        </picture>
-        
-        <h3 class="skills__secondary-heading">Reading</h3>
+        </picture>        
+        <h3 class="skills__secondary-heading reading__heading">Reading</h3>
         <p class="skills__text">Perception and response actions of the user
         resulting from the use and/or upcoming use
         of the product, system or service</p>
         <a class="skills__buttons" href="">Learn more</a>
     </li>
-    <li class="skills__item">
-        <picture class="skills__image">
+
+    <li class="skills__item listening">        
+       <div>
+        <h3 class="skills__secondary-heading listening__heading">Listening</h3>
+        <p class="skills__text listening__text">Here you can find activities to practise
+            your listening skills. Listening will help you to improve your understanding</p>
+        <a class="skills__buttons" href="">Learn more</a>
+       </div>    
+        <picture class="skills__image listening__image">
             <source srcset="./image/Podcast320.png 1x, ./image/Podcast320@2x.png 2x" media="(max-width:767px)">
             <source srcset="./image/Podcast768.png 1x, ./image/Podcast768@2x.png 2x"
                 media="(min-width:768px) and (max-width:1337px)">
             <source srcset="./image/Podcast1338.png 1x, ./image/Podcast1338@2x.png 2x" media="(min-width:1338px)">
             <img src="./image/Podcast320.png" alt="people listenning music">
-        </picture>
-        <h3 class="skills__secondary-heading">Listening</h3>
-        <p class="skills__text">Here you can find activities to practise
-        your listening skills. Listening will help you to improve your understanding</p>
-        <a class="skills__buttons" href="">Learn more</a>                
+        </picture>          
     </li>
 </ul>
 </div>
 
 </section>
 <!-- about us -->
-<section class="container">
+<section class="container" id="about__us">
     <h2 class="about-us__heading">About Us</h2>
     <div class="about-us">    
     <div>
@@ -148,7 +151,7 @@
         </li>        
     </ul>
     </div>    
-    <picture>
+    <picture class="about-us__image">
         <source srcset="./image/Business_competition320.png 1x, ./image/Business_competition320@2x.png 2x"
             media="(max-width:767px)">
         <source srcset="./image/Business_competition768.png 1x, ./image/Business_competition768@2x.png 2x"
@@ -160,7 +163,7 @@
 </div>
 </section>
 <!-- pricing -->
-<section>
+<section id="pricing">
     <div class="container pricing">
     <h2 class="pricing__heading">Pricing</h2>
     <ul class="cards">
@@ -189,7 +192,7 @@
                 <img src="./image/Lesson320.png" alt="live classes">
             </picture>            
             <h3 class="cards__heading">Live online classes</h3>
-            <p class="cards__text">Interactive group classes with expert
+            <p class="cards__text cards__text--margin">Interactive group classes with expert
             teachers. Free 7-day trial</p>
             <p class="cards__price">£12.99 <span class="cards__limit">per month</span></p>
             
@@ -204,41 +207,57 @@
                 <img src="./image/Webinar320.png" alt="woman studying">
             </picture>            
             <h3 class="cards__heading">Personal Tuition</h3> 
-            <p class="cards__text">Online one-to-one English tutoring – enjoy
+            <p class="cards__text cards__text--margin">Online one-to-one English tutoring – enjoy
             our first session for only $1</p>
-            <p class="cards__price">£12.99 <span class="cards__limit">per month</span></p>
+            <p class="cards__price">£20.99 <span class="cards__limit">per month</span></p>
             
         </li>
     </ul>
     </div>
     </section>
     <!-- contuct us -->
-    <section>
-        <div class="container">
-        <picture>
-            <source srcset="./image/contact_us320.png 1x, ./image/contact_us320@2x.png 2x"
-                media="(max-width:767px)">
-            <source srcset="./image/contact_us768.png 1x, ./image/contact_us768@2x.png 2x"
-                media="(min-width:768px) and (max-width:1337px)">
-            <source srcset="./image/contact_us1338.png 1x, ./image/contact_us1338@2x.png 2x" media="(min-width:1338px)">
-            <img src="./image/contact_us320.png" alt="boy with paper plane">
-        </picture>       
-        <h2>Contact Us</h2>
-        <p>Discover your current English level by taking our free online English test. Sign up to our newsletter for learning tips
-        and free resources</p>
+    <section id="contacts">
+        <div class="container contact-us">           
+                <picture class="contact-us__image">
+                <source srcset="./image/contact_us320.png 1x, ./image/contact_us320@2x.png 2x" media="(max-width:767px)">
+                <source srcset="./image/contact_us768.png 1x, ./image/contact_us768@2x.png 2x"
+                    media="(min-width:768px) and (max-width:1337px)">
+                <source srcset="./image/contact_us1338.png 1x, ./image/contact_us1338@2x.png 2x" media="(min-width:1338px)">
+                <img src="./image/contact_us320.png" alt="boy with paper plane">
+            </picture>
+
+
+        <div>
+            <h2 class="contact-us__heading">Contact Us</h2>
+        
+        <p class="contact-us__text">Discover your current English level by taking our free online English test. Sign up to our
+            newsletter for learning tips
+            and free resources</p>
+        <form class="contact-us__form" name="subscribe_form" autocomplete="on" novalidate>
+            <label>
+                <input class="contact-us__input" type="email" name="email" placeholder="Enter Your E-mail" />
+            </label>
+            <button class="contact-us__button" type="subscribe">Subscribe</button>
+        </form>
+    </div>
     </div>
     </section>
    
 </main>
 <!-- footer -->
-   <footer>
+   <footer class="footer">
     <div class="container">
-    <a class="logo" href="./index.html">Brit<span class="logo--second-color">lex</span></a>
+    <div class="footer--border">
+    <a  class="logo footer__logo" href="./index.html">Brit<span class="logo--second-color">lex</span></a>
     <ul class="footer__links">
         <li><a href="">Terms and Conditions</a></li>
+        <li>•</li>
         <li><a href="">Privacy Policy</a></li>
+        <li>•</li>
         <li><a href="">Cookie Policy</a></li>
     </ul>
+</div>
+   
     </div>
    </footer>
 

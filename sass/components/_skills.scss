@@ -1,5 +1,6 @@
 .skills__item{
     background-color: $second-background;
+    border-radius: $border-radius;
 }
 
 .skills__buttons{
@@ -48,5 +49,141 @@
         justify-content: center;
     }
 
-
+    .listening{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
+
+
+@media screen and (min-width: 768px) {
+    .skills__main-heading{
+        text-align: center;
+        margin-bottom: 55px;
+    }
+    
+    .skills__secondary-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .skills__buttons{
+        display: flex;
+        margin-bottom: 30px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        width: 178px;
+        justify-content: center;
+        font-size: 16px;
+        border-radius: $border-radius;
+
+    }
+
+    .skills__item{
+        padding-left: 14px;
+        padding-right: 10px;
+    } 
+  
+
+    .skills__text{
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+
+    .skills__list{
+        display: grid;
+        grid-template-columns:32% 33% 33%;
+        gap: 10px;               
+    }
+
+    .speaking{
+        padding-top: 35px;
+        grid-row: 1/3;
+
+        &__heading{
+            margin-top: 25px;
+        }
+    }
+
+    .reading__heading{
+        margin-top: 55px;
+    } 
+
+    .listening{
+        display:grid;
+        grid-column: 2/4; 
+        grid-template-columns: 58% 42%;
+        
+        &__image{
+            margin-top: 60px;     
+        }
+
+        &__heading{
+            margin-top: 25px;
+        }        
+    }
+}
+
+@media screen and (min-width: 1338px) {
+
+
+
+.skills__secondary-heading {        
+        margin-bottom: 20px;
+    }
+
+    .skills__buttons {
+        display: flex;
+        margin-bottom: 30px;
+        height: 60px;
+        width: 220px;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        border-radius: $border-radius;
+
+    }
+
+    .skills__item {
+        padding-left: 18px;
+        padding-right: 40px;
+    }
+
+    .skills__text {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .skills__list {        
+        gap:1em;
+    }
+
+    .speaking {
+        padding-top: 35px;
+        grid-row: 1/3;
+
+        &__heading {
+            margin-top: 25px;
+        }
+    }
+
+    .reading__heading {
+        margin-top: 0;
+    }
+
+    .listening {
+        display: grid;
+        grid-column: 2/4;
+        grid-template-columns: 58% 42%;
+
+        &__image {
+            margin-top: 60px;
+        }
+
+        &__heading {
+            margin-top: 25px;
+        }
+    }
+}
+
+
